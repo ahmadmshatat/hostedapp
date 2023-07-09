@@ -63,18 +63,18 @@ dependencies {
     androidTestImplementation libs.ui.test.junit4
     debugImplementation libs.ui.tooling
     debugImplementation libs.ui.test.manifest
-    api files('libs/cura-app.aar')
-    api files('libs/capacitor-android.aar')
-    api files('libs/capacitor-preferences.aar')
+    implementation(files('libs/app-app.aar'))
+    implementation files('libs/capacitor-android.aar')
+    implementation files('libs/capacitor-preferences.aar')
 
-    api files('libs/capacitor-filesystem.aar')
+    implementation files('libs/capacitor-filesystem.aar')
 
-    api files('libs/capacitor-cordova-android-plugins.aar')
+    implementation files('libs/capacitor-cordova-android-plugins.aar')
 
-    api files('libs/capacitor-camera.aar')
+    implementation files('libs/capacitor-camera.aar')
     implementation 'com.google.android.material:material:1.5.0'
     implementation 'androidx.appcompat:appcompat:1.4.1'
-    api "org.apache.cordova:framework:10.1.1"
+    implementation "org.apache.cordova:framework:10.1.1"
     implementation 'androidx.webkit:webkit:1.4.0'
 
 }
